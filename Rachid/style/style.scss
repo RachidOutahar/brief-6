@@ -1,0 +1,279 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+nav{
+    a{
+        img#logo{
+            width: 100px;
+        }
+    }
+    ul.navbar-nav{
+        margin-right: 0px !important;
+        li a{
+            padding-right: 30px !important;
+            padding-left: 30px !important;
+        }
+    }
+}
+nav.bg-light{
+    background-color: #f1f1f1 !important;
+}
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+#shefted{
+    background-image: url(../images/FqXKoG.png);
+    background-size: cover;
+    background-position: bottom;
+    .content{
+        margin: auto;
+        text-align: center;
+        padding: 250px 0;
+        .concontent{
+            color: white !important;
+            background-color: rgba(0, 0, 0, 0.76);
+            padding: 60px 40px;
+            border-radius: 4px;
+            p{
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+#services-banner{
+    padding: 60px 0;
+    .btn-services{
+        .content{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                margin: 15px 0;
+            }
+        }
+    }
+    .card-services{
+        margin-top: 60px;
+        .content{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .card{
+                width: 45%;
+                text-align: center;
+                @media (max-width: 800px) {
+                    width: 80% !important;
+                }
+                img{
+                    height: 100px;
+                }
+                .card-body{
+                    padding: 3rem !important;
+                }
+            }
+            .card:first-child{
+                background-color: #2980B9 !important;
+            }
+            .card:nth-child(2){
+                background-color: #75A6D7 !important;
+            }
+            .card:nth-child(3){
+                background-color: #C8B360 !important;
+            }
+            .card:nth-child(4){
+                background-color: #DB9E36 !important;
+            }
+        }
+    }
+}
+#politique{
+    padding: 90px 0;
+    .content{
+        text-align: center;
+        p{
+            font-size: 18px;
+            line-height: 46px;
+            margin-top: 30px;
+        }
+    }
+}
+#news{
+    text-align: center;
+}
+#lower-section{
+    
+    .content{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+     .card-lower{
+        position: relative;
+        // margin: 0px 50px;
+    }
+     .card-lower .face{
+        width: 300px;
+        height: 200px;
+        transition: all .5s ;
+    }
+     .card-lower .face.face1{
+        position: relative;
+        background-color: #72b1e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        transform: translateY(100px);
+    }
+     .card-lower:hover .face.face1{
+        transform: translateY(0);
+        background-color: #72b1e6;
+    }
+     .card-lower .face.face1 .content{
+        transition: 0.5s;
+        display: block;
+    }
+     .card-lower:hover .face.face1 .content{
+        opacity: 1;
+    }
+     .card-lower .face.face1 .content img{
+        max-width: 100px;
+        min-height: 70px;
+    }
+     .card-lower .face.face1 .content h2{
+        margin: 10px 0 0;
+        padding: 0;
+        color: #fff;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+     .card-lower .face.face2{
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        transform: translateY(-100px);
+    }
+     .card-lower:hover .face.face2{
+        transform: translateY(0);
+    }
+     .card-lower .face.face2 .content p{
+        margin: 0;
+        padding: 0;
+    }
+     .card-lower .face.face2 .content a{
+        margin: 20px 0 0;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid #333;
+        transition: .2s ease-out;
+    }
+     .card-lower .face.face2 .content a:hover{
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+section#contact{
+    background-image: url(../images/47503538_298357684356213_7210141871052623986_n.png);
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+section#contact .content{
+    width: 70%;
+    margin: auto;
+}
+section#contact .content h1{
+    color: #fff;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+section#contact .content p{
+    color: #F6F6F6;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+section#contact .content input{
+    width: 79%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    display: block;
+}
+section#contact .content a{
+    background-color: #C49D48;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 20px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+section#contact .content a:hover{
+    background-color: #b8802d;
+}
+#liens{
+    padding: 60px 0;
+    a{
+        color: #4E4E4E;
+    }
+    a:hover{
+        color: #000;
+    }
+}
+#footer{
+    background-color: #4E4E4E;
+    color: #fff;
+    .content{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 850px) {
+            display: block;
+            text-align: center;
+        }
+        div{
+            padding: 3px;
+            img{
+                width: 20px;
+            }
+        }
+        p{
+            margin: 0 !important;
+        }
+    }
+}
